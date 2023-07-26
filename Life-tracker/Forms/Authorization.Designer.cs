@@ -1,6 +1,6 @@
 ﻿namespace Life_tracker
 {
-    partial class Form1
+    partial class Authorization
     {
         /// <summary>
         /// Обязательная переменная конструктора.
