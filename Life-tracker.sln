@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Life-tracker", "Life-tracker\Life-tracker.csproj", "{FFAC8B98-6E4E-49F5-AD54-C1168E458DA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFAC8B98-6E4E-49F5-AD54-C1168E458DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFAC8B98-6E4E-49F5-AD54-C1168E458DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFAC8B98-6E4E-49F5-AD54-C1168E458DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFAC8B98-6E4E-49F5-AD54-C1168E458DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8045F7FE-59B1-425B-8213-A0E7749AF93D}
+	EndGlobalSection
+EndGlobal
