@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Life_tracker
 {
-    public partial class Authorization : Form
+    public partial class Авторизация : Form
     {
-        public Authorization()
+        public Авторизация()
         {
             InitializeComponent();
         }
