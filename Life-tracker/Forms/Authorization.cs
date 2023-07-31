@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Life_tracker.Entity_classes;
 
 namespace Life_tracker
 {
@@ -17,6 +18,21 @@ namespace Life_tracker
         public Authorization()
         {
             InitializeComponent();
+        }
+
+        private void Authorization_Load(object sender, EventArgs e)
+        {
+            using(var context = new UserDbContext())
+            {       
+                /*
+                var Users = context.users.ToList();
+
+                foreach (var user in Users)
+                {
+                    MessageBox.Show(user.Login);
+                }
+                */
+            }
         }
     }
 }
