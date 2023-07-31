@@ -24,16 +24,12 @@ namespace Life_tracker
         {
             tbUsername.Text = "User";
             tbPassword.Text = "Password";
+
             using (var context = new UserDbContext())
             {       
-                /*
                 var Users = context.users.ToList();
 
-                foreach (var user in Users)
-                {
-                    MessageBox.Show(user.Login);
-                }
-                */
+                
             }
         }
 
