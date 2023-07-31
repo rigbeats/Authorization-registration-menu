@@ -3,25 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Text;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Life_tracker
+namespace Life_tracker.Forms
 {
-    public partial class Authorization : Form
+    public partial class SignUp : Form
     {
-        public Authorization()
+        public SignUp()
         {
             InitializeComponent();
-        }
-
-        private void Authorization_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
