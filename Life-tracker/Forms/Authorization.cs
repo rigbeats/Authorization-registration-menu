@@ -22,7 +22,9 @@ namespace Life_tracker
 
         private void Authorization_Load(object sender, EventArgs e)
         {
-            using(var context = new UserDbContext())
+            tbUsername.Text = "User";
+            tbPassword.Text = "Password";
+            using (var context = new UserDbContext())
             {       
                 /*
                 var Users = context.users.ToList();
@@ -32,6 +34,38 @@ namespace Life_tracker
                     MessageBox.Show(user.Login);
                 }
                 */
+            }
+        }
+
+        private void tbUsername_Enter(object sender, EventArgs e)
+        {
+            if (tbUsername.Text == "User")
+            {
+                tbUsername.Text = "";
+            }
+        }
+
+        private void tbUsername_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbUsername.Text))
+            {
+                tbUsername.Text = "User";
+            }
+        }
+
+        private void tbPassword_Enter(object sender, EventArgs e)
+        {
+            if (tbPassword.Text == "Password")
+            {
+                tbPassword.Text = "";
+            }
+        }
+
+        private void tbPassword_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbPassword.Text))
+            {
+                tbPassword.Text = "Password";
             }
         }
     }
