@@ -168,7 +168,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Users.mdf</DependentUpon>
     </Content>
-    <Content Include="Images\reg_im.jpg" />
     <Content Include="Images\signup_im.jpg" />
     <Content Include="Images\загруженное %281%29.jpg" />
     <Content Include="Images\загруженное.jpg" />
