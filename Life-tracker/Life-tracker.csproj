@@ -92,8 +92,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoundButton.cs" />
-    <Compile Include="UserDbContext.cs" />
+    <Compile Include="Entity classes\UserDbContext.cs" />
     <EmbeddedResource Include="Forms\Authorization.resx">
       <DependentUpon>Authorization.cs</DependentUpon>
     </EmbeddedResource>
