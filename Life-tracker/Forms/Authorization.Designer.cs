@@ -41,18 +41,20 @@ namespace Life_tracker
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.eye = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tbPassword = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(192, 466);
+            this.button1.Location = new System.Drawing.Point(178, 437);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(229, 69);
             this.button1.TabIndex = 5;
@@ -156,12 +158,23 @@ namespace Life_tracker
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(172)))), ((int)(((byte)(124)))));
+            this.panel2.Controls.Add(this.eye);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.tbPassword);
             this.panel2.Location = new System.Drawing.Point(167, 298);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(266, 47);
             this.panel2.TabIndex = 17;
+            // 
+            // eye
+            // 
+            this.eye.Image = ((System.Drawing.Image)(resources.GetObject("eye.Image")));
+            this.eye.Location = new System.Drawing.Point(224, 6);
+            this.eye.Name = "eye";
+            this.eye.Size = new System.Drawing.Size(35, 35);
+            this.eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.eye.TabIndex = 18;
+            this.eye.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -182,7 +195,7 @@ namespace Life_tracker
             this.tbPassword.Location = new System.Drawing.Point(54, 13);
             this.tbPassword.Margin = new System.Windows.Forms.Padding(2);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(199, 23);
+            this.tbPassword.Size = new System.Drawing.Size(158, 23);
             this.tbPassword.TabIndex = 6;
             this.tbPassword.Enter += new System.EventHandler(this.tbPassword_Enter);
             this.tbPassword.Leave += new System.EventHandler(this.tbPassword_Leave);
@@ -211,6 +224,7 @@ namespace Life_tracker
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -230,6 +244,7 @@ namespace Life_tracker
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.PictureBox eye;
     }
 }
 
