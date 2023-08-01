@@ -72,6 +72,7 @@ namespace Life_tracker
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(199, 23);
             this.tbUsername.TabIndex = 6;
+            this.tbUsername.Text = "User";
             this.tbUsername.Enter += new System.EventHandler(this.tbUsername_Enter);
             this.tbUsername.Leave += new System.EventHandler(this.tbUsername_Leave);
             // 
@@ -175,6 +176,7 @@ namespace Life_tracker
             this.eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.eye.TabIndex = 18;
             this.eye.TabStop = false;
+            this.eye.Click += new System.EventHandler(this.eye_Click);
             // 
             // pictureBox3
             // 
@@ -197,6 +199,7 @@ namespace Life_tracker
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(158, 23);
             this.tbPassword.TabIndex = 6;
+            this.tbPassword.Text = "Password";
             this.tbPassword.Enter += new System.EventHandler(this.tbPassword_Enter);
             this.tbPassword.Leave += new System.EventHandler(this.tbPassword_Leave);
             // 
