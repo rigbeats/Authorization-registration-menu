@@ -32,7 +32,7 @@ namespace Life_tracker
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Authorization));
             this.button1 = new System.Windows.Forms.Button();
-            this.tbUsername = new System.Windows.Forms.TextBox();
+            this.tbLogin = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,20 +61,20 @@ namespace Life_tracker
             this.button1.Text = "Войти";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // tbUsername
+            // tbLogin
             // 
-            this.tbUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(172)))), ((int)(((byte)(124)))));
-            this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbUsername.Font = new System.Drawing.Font("Helvetica", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbUsername.ForeColor = System.Drawing.Color.White;
-            this.tbUsername.Location = new System.Drawing.Point(54, 13);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(2);
-            this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(199, 23);
-            this.tbUsername.TabIndex = 6;
-            this.tbUsername.Text = "User";
-            this.tbUsername.Enter += new System.EventHandler(this.tbUsername_Enter);
-            this.tbUsername.Leave += new System.EventHandler(this.tbUsername_Leave);
+            this.tbLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(172)))), ((int)(((byte)(124)))));
+            this.tbLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbLogin.Font = new System.Drawing.Font("Helvetica", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbLogin.ForeColor = System.Drawing.Color.White;
+            this.tbLogin.Location = new System.Drawing.Point(54, 13);
+            this.tbLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.tbLogin.Name = "tbLogin";
+            this.tbLogin.Size = new System.Drawing.Size(199, 23);
+            this.tbLogin.TabIndex = 6;
+            this.tbLogin.Text = "Login";
+            this.tbLogin.Enter += new System.EventHandler(this.tbLogin_Enter);
+            this.tbLogin.Leave += new System.EventHandler(this.tbLogin_Leave);
             // 
             // label2
             // 
@@ -91,7 +91,7 @@ namespace Life_tracker
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Image = global::Life_tracker.Properties.Resources.signup_im;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(606, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
@@ -140,8 +140,8 @@ namespace Life_tracker
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(172)))), ((int)(((byte)(124)))));
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.tbUsername);
-            this.panel1.Location = new System.Drawing.Point(167, 236);
+            this.panel1.Controls.Add(this.tbLogin);
+            this.panel1.Location = new System.Drawing.Point(167, 216);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(266, 47);
             this.panel1.TabIndex = 15;
@@ -149,9 +149,9 @@ namespace Life_tracker
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(7, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(7, 9);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
@@ -162,7 +162,7 @@ namespace Life_tracker
             this.panel2.Controls.Add(this.eye);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.tbPassword);
-            this.panel2.Location = new System.Drawing.Point(167, 298);
+            this.panel2.Location = new System.Drawing.Point(167, 278);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(266, 47);
             this.panel2.TabIndex = 17;
@@ -170,9 +170,9 @@ namespace Life_tracker
             // eye
             // 
             this.eye.Image = ((System.Drawing.Image)(resources.GetObject("eye.Image")));
-            this.eye.Location = new System.Drawing.Point(224, 6);
+            this.eye.Location = new System.Drawing.Point(229, 9);
             this.eye.Name = "eye";
-            this.eye.Size = new System.Drawing.Size(35, 35);
+            this.eye.Size = new System.Drawing.Size(30, 30);
             this.eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.eye.TabIndex = 18;
             this.eye.TabStop = false;
@@ -181,9 +181,9 @@ namespace Life_tracker
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(7, 6);
+            this.pictureBox3.Location = new System.Drawing.Point(7, 9);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
@@ -220,7 +220,6 @@ namespace Life_tracker
             this.Name = "Authorization";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignIn";
-            this.Load += new System.EventHandler(this.Authorization_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -236,7 +235,7 @@ namespace Life_tracker
 
         #endregion
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox tbUsername;
+        private System.Windows.Forms.TextBox tbLogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;

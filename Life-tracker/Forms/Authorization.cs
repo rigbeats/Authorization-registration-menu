@@ -21,30 +21,19 @@ namespace Life_tracker
             InitializeComponent();
         }
 
-        private void Authorization_Load(object sender, EventArgs e)
+        private void tbLogin_Enter(object sender, EventArgs e)
         {
-
-            using (var context = new UserDbContext())
-            {       
-                var Users = context.users.ToList();
-
-                
+            if (tbLogin.Text == "Login")
+            {
+                tbLogin.Text = "";
             }
         }
 
-        private void tbUsername_Enter(object sender, EventArgs e)
+        private void tbLogin_Leave(object sender, EventArgs e)
         {
-            if (tbUsername.Text == "User")
+            if (string.IsNullOrWhiteSpace(tbLogin.Text))
             {
-                tbUsername.Text = "";
-            }
-        }
-
-        private void tbUsername_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(tbUsername.Text))
-            {
-                tbUsername.Text = "User";
+                tbLogin.Text = "Login";
             }
         }
 
