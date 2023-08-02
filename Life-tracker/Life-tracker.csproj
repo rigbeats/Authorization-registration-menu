@@ -167,9 +167,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Users.mdf</DependentUpon>
     </Content>
+    <Content Include="Icons\eye_icon.png" />
+    <Content Include="Icons\eye_off_icon.png" />
+    <Content Include="Icons\feather_icon.png" />
+    <Content Include="Icons\lock_icon.png" />
     <Content Include="Images\signup_im.jpg" />
-    <Content Include="Images\загруженное %281%29.jpg" />
-    <Content Include="Images\загруженное.jpg" />
+    <Content Include="Images\signup_reflect_im.jpg" />
+    <Content Include="Icons\user_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
