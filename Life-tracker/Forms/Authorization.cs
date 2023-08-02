@@ -74,5 +74,10 @@ namespace Life_tracker
 
             hidePasword = !hidePasword;
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
