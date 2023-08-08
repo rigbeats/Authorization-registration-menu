@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using Life_tracker.Entity_classes;
 using Life_tracker.Forms;
 using System.Threading;
+using System.Security.Cryptography;
 
 namespace Life_tracker
 {
@@ -118,15 +119,44 @@ namespace Life_tracker
 
         private void bSignUp_Click(object sender, EventArgs e)
         {
+            OpenNewForm(new SignUp());
+        }
+
+        public void OpenNewForm(Form newForm)
+        {
             this.Close();
-            thread = new Thread(openNewForm);
+            thread = new Thread(() => NewThread(newForm));
 
             thread.Start();
         }
 
-        public void openNewForm(object obj)
+        public void NewThread(Form newForm)
         {
-            Application.Run(new SignUp());
+            Application.Run(newForm);
+        }
+
+        private void bSignIn_Click(object sender, EventArgs e)
+        {
+            string login = tbLogin.Text;
+            string password = tbPassword.Text;
+
+            if (login == "Login" || password == "Password")
+                MessageBox.Show("Все поля должны быть заполнены");
+
+            else
+            {
+                using (var context = new UserDbContext())
+                {
+                    bool accountExists = context.users.Any(x => x.Login == login && x.Password == password);
+
+                    if (accountExists)
+                    {
+                        OpenNewForm(new MainForm());
+                    }
+                    else
+                        MessageBox.Show("Введен неверный логин или пароль");
+                }
+            }
         }
     }
 }

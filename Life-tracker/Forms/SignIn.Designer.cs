@@ -286,6 +286,7 @@ namespace Life_tracker
             this.bSignIn.TextMarginLeft = 0;
             this.bSignIn.TextPadding = new System.Windows.Forms.Padding(0);
             this.bSignIn.UseDefaultRadiusAndThickness = true;
+            this.bSignIn.Click += new System.EventHandler(this.bSignIn_Click);
             // 
             // bSignUp
             // 
