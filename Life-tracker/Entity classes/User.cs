@@ -10,6 +10,8 @@ namespace Life_tracker.Entity_classes
     {
         public int Id { get; set; }
 
+        public string Firstname { get; set; }
+
         public string Login { get; set; }
 
         public string Password { get; set; }
