@@ -141,7 +141,10 @@ namespace Life_tracker
             string password = tbPassword.Text;
 
             if (login == "Login" || password == "Password")
-                MessageBox.Show("Все поля должны быть заполнены");
+            {
+                var attentionForm = new AttentionForm("All fields must be filled in!");
+                attentionForm.ShowDialog();
+            }
 
             else
             {
@@ -154,7 +157,10 @@ namespace Life_tracker
                         OpenNewForm(new MainForm());
                     }
                     else
-                        MessageBox.Show("Введен неверный логин или пароль");
+                    {
+                        var attentionForm = new AttentionForm("Invalid username or password entered");
+                        attentionForm.ShowDialog();
+                    }
                 }
             }
         }

@@ -133,7 +133,8 @@ namespace Life_tracker.Forms
                 login == "Login" ||
                 password == "Password")
             {
-                MessageBox.Show("Все поля должны быть заполнены");
+                var attentionForm = new AttentionForm("All fields must be filled in");
+                attentionForm.ShowDialog();
             }
 
             else
@@ -152,11 +153,17 @@ namespace Life_tracker.Forms
 
                         context.users.Add(user);
                         context.SaveChanges();
-                        MessageBox.Show("Аккаунт успешно создан");
+
+                        var sucsessfulForm = new SuccessfulForm("Account successfully created");
+                        sucsessfulForm.ShowDialog();
+                        
                     }
 
                     else
-                        MessageBox.Show("Логин уже занят");
+                    {
+                        var attentionForm = new AttentionForm("The login is already occupied");
+                        attentionForm.ShowDialog();
+                    }
                 }
         }
     }
