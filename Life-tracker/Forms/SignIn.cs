@@ -122,15 +122,15 @@ namespace Life_tracker
             OpenNewForm(new SignUp());
         }
 
-        public void OpenNewForm(Form newForm)
+        private void OpenNewForm(Form newForm)
         {
             this.Close();
-            thread = new Thread(() => NewThread(newForm));
 
+            thread = new Thread(() => NewThread(newForm));
             thread.Start();
         }
 
-        public void NewThread(Form newForm)
+        private void NewThread(Form newForm)
         {
             Application.Run(newForm);
         }
