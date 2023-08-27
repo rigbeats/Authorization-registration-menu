@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Life_tracker
+namespace Authorization_registration_menu
 {
     partial class SignIn
     {

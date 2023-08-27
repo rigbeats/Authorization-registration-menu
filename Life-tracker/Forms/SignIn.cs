@@ -9,12 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Life_tracker.Entity_classes;
-using Life_tracker.Forms;
+using Authorization_registration_menu.Entity_classes;
+using Authorization_registration_menu.Forms;
 using System.Threading;
 using System.Security.Cryptography;
 
-namespace Life_tracker
+namespace Authorization_registration_menu
 {
     public partial class SignIn : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace Life_tracker.Forms
+﻿namespace Authorization_registration_menu.Forms
 {
     partial class AttentionForm
     {

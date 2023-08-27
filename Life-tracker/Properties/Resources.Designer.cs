@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Life_tracker.Properties {
+namespace Authorization_registration_menu.Properties {
     using System;
     
     

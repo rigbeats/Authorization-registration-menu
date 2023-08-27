@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Life_tracker.Entity_classes
+namespace Authorization_registration_menu.Entity_classes
 {
     internal class User
     {

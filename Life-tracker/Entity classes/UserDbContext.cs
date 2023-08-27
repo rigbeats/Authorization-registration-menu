@@ -4,9 +4,9 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Life_tracker.Entity_classes;
+using Authorization_registration_menu.Entity_classes;
 
-namespace Life_tracker
+namespace Authorization_registration_menu
 {
     internal class UserDbContext : DbContext
     {

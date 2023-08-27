@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Life_tracker.Forms
+namespace Authorization_registration_menu.Forms
 {
     public partial class SuccessfulForm : Form
     {

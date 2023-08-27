@@ -1,4 +1,4 @@
-﻿using Life_tracker.Forms;
+﻿using Authorization_registration_menu.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Life_tracker
+namespace Authorization_registration_menu
 {
     internal static class Program
     {

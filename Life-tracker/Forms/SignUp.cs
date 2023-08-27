@@ -9,9 +9,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Life_tracker.Entity_classes;
+using Authorization_registration_menu.Entity_classes;
 
-namespace Life_tracker.Forms
+namespace Authorization_registration_menu.Forms
 {
     public partial class SignUp : Form
     {
