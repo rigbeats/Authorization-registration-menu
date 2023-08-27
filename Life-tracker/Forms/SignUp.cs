@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -16,6 +17,7 @@ namespace Authorization_registration_menu.Forms
     public partial class SignUp : Form
     {
         Thread thread = null;
+        string ImagePath = Path.GetFullPath(Path.Combine(Application.StartupPath, "..\\.."));
 
         public SignUp()
         {
@@ -75,7 +77,7 @@ namespace Authorization_registration_menu.Forms
 
         private void bSignIn_MouseDown(object sender, MouseEventArgs e)
         {
-            string imagePath = "D:\\Life-tracker\\Life-tracker\\Images\\ThinButtonAfterClick.png";
+            string imagePath = Path.Combine(ImagePath, "Images\\ThinButtonAfterClick.png");
             bSignIn.Image = Image.FromFile(imagePath);
 
             lSignIn.BackColor = Color.FromArgb(113, 180, 161);
@@ -83,7 +85,7 @@ namespace Authorization_registration_menu.Forms
 
         private void bSignIn_MouseUp(object sender, MouseEventArgs e)
         {
-            string imagePath = "D:\\Life-tracker\\Life-tracker\\Images\\ThinButton.png";
+            string imagePath = Path.Combine(ImagePath, "Images\\ThinButton.png");
             bSignIn.Image = Image.FromFile(imagePath);
 
             lSignIn.BackColor = Color.FromArgb(151, 220, 203);
@@ -91,7 +93,7 @@ namespace Authorization_registration_menu.Forms
 
         private void bSignIn_MouseEnter(object sender, EventArgs e)
         {
-            string imagePath = "D:\\Life-tracker\\Life-tracker\\Images\\ThinButtonAfterEnter.png";
+            string imagePath = Path.Combine(ImagePath, "Images\\ThinButtonAfterEnter.png");
             bSignIn.Image = Image.FromFile(imagePath);
 
             lSignIn.BackColor = Color.FromArgb(176, 237, 225);
@@ -99,7 +101,7 @@ namespace Authorization_registration_menu.Forms
 
         private void bSignIn_MouseLeave(object sender, EventArgs e)
         {
-            string imagePath = "D:\\Life-tracker\\Life-tracker\\Images\\ThinButton.png";
+            string imagePath = Path.Combine(ImagePath, "Images\\ThinButton.png");
             bSignIn.Image = Image.FromFile(imagePath);
 
             lSignIn.BackColor = Color.FromArgb(151, 220, 203);

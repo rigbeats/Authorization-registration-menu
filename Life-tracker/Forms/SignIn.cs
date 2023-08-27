@@ -13,6 +13,7 @@ using Authorization_registration_menu.Entity_classes;
 using Authorization_registration_menu.Forms;
 using System.Threading;
 using System.Security.Cryptography;
+using System.Runtime.CompilerServices;
 
 namespace Authorization_registration_menu
 {
@@ -20,6 +21,7 @@ namespace Authorization_registration_menu
     {
         bool hidePasword = true;
         Thread thread = null;
+        string ImagePath = Path.GetFullPath(Path.Combine(Application.StartupPath, "..\\.."));
 
         public SignIn()
         {
@@ -67,8 +69,8 @@ namespace Authorization_registration_menu
 
         private void eye_Click(object sender, EventArgs e)
         {
-            string eyeIconPath = "D:\\Life-tracker\\Life-tracker\\Icons\\eye_icon.png";
-            string eyeOffIconPath = "D:\\Life-tracker\\Life-tracker\\Icons\\eye_off_icon.png";
+            string eyeIconPath = Path.Combine(ImagePath, "Icons\\eye_icon.png");
+            string eyeOffIconPath = Path.Combine(ImagePath, "Icons\\eye_off_icon.png");
 
             if (hidePasword)
             {
@@ -87,7 +89,7 @@ namespace Authorization_registration_menu
 
         private void bSignUp_MouseDown(object sender, MouseEventArgs e)
         {
-            string imagePath = "D:\\Life-tracker\\Life-tracker\\Images\\ThinButtonAfterClick.png";
+            string imagePath = Path.Combine(ImagePath, "Images\\ThinButtonAfterClick.png");
             bSignUp.Image = Image.FromFile(imagePath);
 
             lSignUp.BackColor = System.Drawing.Color.FromArgb(113, 180, 161);
@@ -95,7 +97,7 @@ namespace Authorization_registration_menu
 
         private void bSignUp_MouseUp(object sender, MouseEventArgs e)
         {
-            string imagePath = "D:\\Life-tracker\\Life-tracker\\Images\\ThinButton.png";
+            string imagePath = Path.Combine(ImagePath, "Images\\ThinButton.png");
             bSignUp.Image = Image.FromFile(imagePath);
 
             lSignUp.BackColor = System.Drawing.Color.FromArgb(151, 220, 203);
@@ -103,7 +105,7 @@ namespace Authorization_registration_menu
 
         private void bSignUp_MouseEnter(object sender, EventArgs e)
         {
-            string imagePath = "D:\\Life-tracker\\Life-tracker\\Images\\ThinButtonAfterEnter.png";
+            string imagePath = Path.Combine(ImagePath, "Images\\ThinButtonAfterEnter.png");
             bSignUp.Image = Image.FromFile(imagePath);
 
             lSignUp.BackColor = System.Drawing.Color.FromArgb(176, 237, 225);
@@ -111,7 +113,7 @@ namespace Authorization_registration_menu
 
         private void bSignUp_MouseLeave(object sender, EventArgs e)
         {
-            string imagePath = "D:\\Life-tracker\\Life-tracker\\Images\\ThinButton.png";
+            string imagePath = Path.Combine(ImagePath, "Images\\ThinButton.png");
             bSignUp.Image = Image.FromFile(imagePath);
 
             lSignUp.BackColor = System.Drawing.Color.FromArgb(151, 220, 203);
