@@ -257,27 +257,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\budgetTracking.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\budgetTracking_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>budgetTracking.mdf</DependentUpon>
-    </Content>
-    <Content Include="Data\diary.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\diary_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>diary.mdf</DependentUpon>
-    </Content>
-    <Content Include="Data\healthTracking.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\healthTracking_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>healthTracking.mdf</DependentUpon>
-    </Content>
     <Content Include="Data\Users.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
